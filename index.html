@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Low | Automation & Systems Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 sm:px-8 font-sans antialiased">
+  <main class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <header class="border-b border-slate-800 pb-6 mb-8">
+      <h1 class="text-3xl font-bold tracking-tight text-white">Gabriel Low</h1>
+      <p class="text-slate-400 mt-1 text-sm sm:text-base">
+        Workflow Automation & Enterprise Systems Portfolio
+      </p>
+      <div class="mt-4 flex flex-wrap gap-4 text-xs sm:text-sm text-slate-300">
+        <a href="https://linkedin.com/in/lowgabriel" target="_blank" class="hover:text-cyan-400 underline decoration-slate-600 underline-offset-4">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-cyan-400 underline decoration-slate-600 underline-offset-4">GitHub Profile</a>
+        <a href="mailto:2402058@sit.singaporetech.edu.sg" class="hover:text-cyan-400 underline decoration-slate-600 underline-offset-4">Email</a>
+      </div>
+    </header>
+
+    <!-- Tab Bar -->
+    <nav class="flex overflow-x-auto space-x-2 border-b border-slate-800 pb-2 mb-6" id="tab-nav">
+      <button onclick="switchTab('reconciliation')" id="tab-reconciliation" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition-colors bg-slate-800 text-white whitespace-nowrap">
+        Reconciliation & Dispatch
+      </button>
+      <button onclick="switchTab('powerautomate')" id="tab-powerautomate" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition-colors text-slate-400 hover:text-white whitespace-nowrap">
+        Power Automate Workflow
+      </button>
+      <button onclick="switchTab('realestate')" id="tab-realestate" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition-colors text-slate-400 hover:text-white whitespace-nowrap">
+        Cash-Flow Forecasting
+      </button>
+      <button onclick="switchTab('tilttiltboom')" id="tab-tilttiltboom" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition-colors text-slate-400 hover:text-white whitespace-nowrap">
+        Tilt Tilt Boom (C++)
+      </button>
+    </nav>
+
+    <!-- Tab 1: Reconciliation Tool -->
+    <section id="content-reconciliation" class="tab-content space-y-6">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">Office Scripts</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">TypeScript</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Excel on the Web</span>
+        </div>
+        <h2 class="text-xl font-bold text-white">High-Volume Account Reconciliation & Dispatch Tool</h2>
+      </div>
+
+      <!-- Demo Container -->
+      <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-2 overflow-hidden shadow-2xl">
+        <img src="assets/reconciliation-demo.gif" alt="Reconciliation Demo GIF" class="w-full rounded-lg object-cover border border-slate-800" onerror="this.src='https://placehold.co/800x450/0f172a/94a3b8?text=Place+Reconciliation+Demo+GIF+Here';" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">The Bottleneck</h3>
+          <p class="text-slate-400">Manual calculation of aging balances across thousands of client accounts took hours weekly, with manual lookup errors delaying notification dispatches.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">The Solution & Impact</h3>
+          <p class="text-slate-400">Dynamically calculates aging balances and groups subtotal tables in seconds, querying site IDs to auto-generate customized email bodies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Power Automate -->
+    <section id="content-powerautomate" class="tab-content hidden space-y-6">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-blue-950 text-blue-300 border border-blue-800">Microsoft Power Automate</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">M365 Integration</span>
+        </div>
+        <h2 class="text-xl font-bold text-white">Enterprise Notification Workflow Optimization</h2>
+      </div>
+
+      <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-2 overflow-hidden shadow-2xl">
+        <img src="assets/powerautomate-demo.gif" alt="Power Automate Demo GIF" class="w-full rounded-lg object-cover border border-slate-800" onerror="this.src='https://placehold.co/800x450/0f172a/94a3b8?text=Place+Power+Automate+Architecture+or+Run+History+GIF+Here';" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">The Bottleneck</h3>
+          <p class="text-slate-400">A high-volume scheduling workflow suffered from multi-minute run latency and occasional timeouts due to sequential row iterations.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">The Solution & Impact</h3>
+          <p class="text-slate-400">Eliminated redundant loops using batch array filtering and multi-trainer CC routing, reducing execution latency to near-instant execution.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Real Estate Forecasting Model -->
+    <section id="content-realestate" class="tab-content hidden space-y-6">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-emerald-950 text-emerald-300 border border-emerald-800">Google Sheets</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-emerald-950 text-emerald-300 border border-emerald-800">Financial Modeling</span>
+        </div>
+        <h2 class="text-xl font-bold text-white">Real Estate Investment & Cash-Flow Forecasting Model</h2>
+      </div>
+
+      <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-2 overflow-hidden shadow-2xl">
+        <img src="assets/realestate-demo.gif" alt="Financial Model Demo GIF" class="w-full rounded-lg object-cover border border-slate-800" onerror="this.src='https://placehold.co/800x450/0f172a/94a3b8?text=Place+Google+Sheets+Interactive+GIF+Here';" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">The Bottleneck</h3>
+          <p class="text-slate-400">Evaluating multi-scenario property acquisitions required disjointed calculations for loan amortization, vacancy buffers, and exit taxes.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">The Solution & Impact</h3>
+          <p class="text-slate-400">Engineered a single dynamic dashboard that accepts variable input parameters and calculates real-time annualized ROE% and net cash yield.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Tilt Tilt Boom -->
+    <section id="content-tilttiltboom" class="tab-content hidden space-y-6">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800">C++</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800">Custom Engine</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Git / Agile</span>
+        </div>
+        <h2 class="text-xl font-bold text-white">Tilt Tilt Boom — 2D Custom Physics Engine</h2>
+      </div>
+
+      <div class="rounded-xl border border-slate-800 bg-slate-900/50 p-2 overflow-hidden shadow-2xl">
+        <img src="assets/tilttiltboom-demo.gif" alt="Game Engine Demo GIF" class="w-full rounded-lg object-cover border border-slate-800" onerror="this.src='https://placehold.co/800x450/0f172a/94a3b8?text=Place+Game+Engine+Gameplay+GIF+Here';" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">Architecture</h3>
+          <p class="text-slate-400">Custom 2D kinematic physics simulation, AABB collision resolution routines, and modular game loops written from scratch in C++.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-slate-200 mb-1">Team Engineering</h3>
+          <p class="text-slate-400">Collaborative feature branches, pull request reviews, and performance benchmarking across a multi-developer agile workflow.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById('content-' + tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-slate-800', 'text-white');
+        btn.classList.add('text-slate-400');
+      });
+      const activeBtn = document.getElementById('tab-' + tabId);
+      activeBtn.classList.add('bg-slate-800', 'text-white');
+      activeBtn.classList.remove('text-slate-400');
+    }
+  </script>
+</body>
+</html>
