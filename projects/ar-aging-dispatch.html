@@ -26,6 +26,27 @@
         A custom TypeScript Office Script that extracts deep target columns (65–73) from raw, unformatted ERP aging dumps, filters against 16 transaction types, sorts chronologically, and compiles site-partitioned subtotal blocks into a staged <code class="text-cyan-300 font-mono text-xs">Working</code> tab to feed an automated <code class="text-cyan-300 font-mono text-xs">Email Prep</code> engine.
       </p>
     </header>
+    <section class="space-y-4 border-t border-slate-800 pt-8">
+      <h2 class="text-xl font-bold text-white">System Impact</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">Hours &rarr; 3s</div>
+          <div class="text-xs text-slate-400 mt-1">Reconciliation Cycle</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">16 Types</div>
+          <div class="text-xs text-slate-400 mt-1">Automated Filtering</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">100%</div>
+          <div class="text-xs text-slate-400 mt-1">Formula Integrity</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">Seamless</div>
+          <div class="text-xs text-slate-400 mt-1">Email Prep Query Link</div>
+        </div>
+      </div>
+    </section>
 
     <section class="space-y-4">
       <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Pipeline Flow</h2>
@@ -192,28 +213,7 @@ for (let site of uniqueSites) {
       </div>
     </section>
 
-    <section class="space-y-4 border-t border-slate-800 pt-8">
-      <h2 class="text-xl font-bold text-white">System Impact</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">Hours &rarr; 3s</div>
-          <div class="text-xs text-slate-400 mt-1">Reconciliation Cycle</div>
-        </div>
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">16 Types</div>
-          <div class="text-xs text-slate-400 mt-1">Automated Filtering</div>
-        </div>
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">100%</div>
-          <div class="text-xs text-slate-400 mt-1">Formula Integrity</div>
-        </div>
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">Seamless</div>
-          <div class="text-xs text-slate-400 mt-1">Email Prep Query Link</div>
-        </div>
-      </div>
-    </section>
-
+    
     <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-slate-400">
       <a href="../index.html" class="hover:text-white">&larr; Back to Overview</a>
       <a href="power-automate.html" class="text-cyan-400 hover:underline">Next: Power Automate Optimization &rarr;</a>
