@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Reconciliation & Dispatch Tool | Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 sm:px-8 font-sans antialiased">
+  <article class="max-w-3xl mx-auto space-y-10">
+
+    <!-- Navigation Back -->
+    <nav>
+      <a href="../index.html" class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors">&larr; Back to all projects</a>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="space-y-4 border-b border-slate-800 pb-8">
+      <div class="flex flex-wrap gap-2">
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">Office Scripts</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">TypeScript</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Excel on the Web</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">High-Volume Account Reconciliation & Dispatch Tool</h1>
+      <p class="text-slate-400 text-base leading-relaxed">
+        An end-to-end automation workflow designed to parse high-volume statutory aging data, calculate multi-tier customer subtotals in memory, and generate customized notification emails.
+      </p>
+    </header>
+
+    <!-- Hero Showcase (GIF / Video) -->
+    <section class="space-y-3">
+      <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">The Tool in Action</h2>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-2xl overflow-hidden">
+        <img src="../assets/reconciliation/demo-run.gif" alt="Reconciliation Tool Execution GIF" class="w-full rounded-lg border border-slate-800" onerror="this.src='https://placehold.co/800x450/0f172a/94a3b8?text=Add+GIF+of+Script+Running+Here';" />
+      </div>
+      <p class="text-xs text-slate-400 text-center italic">Figure 1: Executing the Office Script on raw accounts aging export; generating grouped subtotals in under 3 seconds.</p>
+    </section>
+
+    <!-- Context & Bottleneck -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-white">The Bottleneck</h2>
+      <p class="text-slate-300 leading-relaxed">
+        The operations team was manually downloading unformatted CSV extracts comprising thousands of aging records. Staff spent between 3 to 5 hours each reconciliation cycle manually applying VLOOKUP formulas, creating pivot tables, and copy-pasting customer figures into notification drafts.
+      </p>
+      <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/50 text-sm text-red-200">
+        <strong>Primary Risk:</strong> Manual formula modifications frequently introduced row-offset errors, leading to misstated customer balances during audits.
+      </div>
+    </section>
+
+    <!-- Technical Architecture / How It Works -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-white">Engineering the Solution</h2>
+      <p class="text-slate-300 leading-relaxed">
+        Rather than relying on volatile spreadsheet formulas, the core processing engine was shifted into a cloud-native TypeScript Office Script:
+      </p>
+      
+      <div class="grid grid-cols-1 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">1. In-Memory Array Batching</h3>
+          <p class="text-slate-400">Avoided cell-by-cell DOM writes. The entire data range is pulled into memory as a 2D array, processed using hash maps to group accounts by client ID, and written back in a single batch call.</p>
+        </div>
+
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">2. Dynamic HTML Email Generation</h3>
+          <p class="text-slate-400">Querying specific site IDs cross-references an internal master roster to generate pre-styled HTML table summaries ready for outbound dispatch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Visual / Code Highlight (Optional) -->
+    <section class="space-y-3">
+      <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Email Dispatch Interface</h2>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+        <img src="../assets/reconciliation/email-preview.png" alt="Email Preview" class="w-full rounded-lg border border-slate-800" onerror="this.src='https://placehold.co/800x350/0f172a/94a3b8?text=Add+Screenshot+of+Generated+Dispatch+Table';" />
+      </div>
+    </section>
+
+    <!-- Quantitative Impact -->
+    <section class="space-y-4 border-t border-slate-800 pt-8">
+      <h2 class="text-xl font-bold text-white">Business Impact</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">98%</div>
+          <div class="text-xs text-slate-400 mt-1">Turnaround Time Cut</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">0%</div>
+          <div class="text-xs text-slate-400 mt-1">Formula Offset Errors</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">&lt; 3s</div>
+          <div class="text-xs text-slate-400 mt-1">Batch Script Execution</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Nav -->
+    <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-slate-400">
+      <a href="../index.html" class="hover:text-white">&larr; Back to Overview</a>
+      <a href="power-automate.html" class="text-cyan-400 hover:underline">Next: Power Automate Optimization &rarr;</a>
+    </footer>
+
+  </article>
+</body>
+</html>
