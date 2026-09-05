@@ -3,101 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Account Reconciliation & Dispatch Tool | Case Study</title>
+  <title>Tilt Tilt Boom | C++ Custom Physics Engine & Mechanics</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 sm:px-8 font-sans antialiased">
-  <article class="max-w-3xl mx-auto space-y-10">
+  <article class="max-w-3xl mx-auto space-y-12">
 
-    <!-- Navigation Back -->
     <nav>
-      <a href="../index.html" class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors">&larr; Back to all projects</a>
+      <a href="../index.html" class="text-sm font-medium text-slate-400 hover:text-amber-400 transition-colors">&larr; Back to all projects</a>
     </nav>
 
-    <!-- Hero Header -->
     <header class="space-y-4 border-b border-slate-800 pb-8">
       <div class="flex flex-wrap gap-2">
-        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">Office Scripts</span>
-        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">TypeScript</span>
-        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Excel on the Web</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800">C++</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800">Custom Engine</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Kinematic Physics</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Git / Agile</span>
       </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">High-Volume Account Reconciliation & Dispatch Tool</h1>
+      
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Tilt Tilt Boom</h1>
+        <a href="https://games.digipen.edu/games/tilt-tilt-boom" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 text-xs font-semibold transition-all w-fit">
+          Play on DigiPen Gallery
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </div>
+
       <p class="text-slate-400 text-base leading-relaxed">
-        An end-to-end automation workflow designed to parse high-volume statutory aging data, calculate multi-tier customer subtotals in memory, and generate customized notification emails.
+        A 2D physics puzzle game built on a proprietary C++ engine[cite: 34, 36]. Players assume the role of an operative defusing explosive devices by clicking and dragging handles to tilt the circular environment, maneuvering an unstable, reactive atom through precision obstacles toward the exhaust port before detonation.
       </p>
     </header>
 
-    <!-- Hero Showcase (GIF / Video) -->
     <section class="space-y-3">
-      <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">The Tool in Action</h2>
+      <div class="flex items-center justify-between">
+        <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Core Interaction & Physics</h2>
+        <span class="text-xs font-mono text-amber-400">Placeholder 01</span>
+      </div>
       <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-2xl overflow-hidden">
-        <img src="../assets/reconciliation/demo-run.gif" alt="Reconciliation Tool Execution GIF" class="w-full rounded-lg border border-slate-800" onerror="this.src='https://placehold.co/800x450/0f172a/94a3b8?text=Add+GIF+of+Script+Running+Here';" />
+        <img src="../assets/tilt-tilt-boom/01-tilt-physics.gif" alt="Circular Bomb Tilting & Atom Physics" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x450/0f172a/f59e0b?text=01.+Tilting+Circular+Bomb+%26+Atom+Kinematic+Physics+GIF';" />
       </div>
-      <p class="text-xs text-slate-400 text-center italic">Figure 1: Executing the Office Script on raw accounts aging export; generating grouped subtotals in under 3 seconds.</p>
+      <p class="text-xs text-slate-400 text-center italic">
+        Figure 1: Mouse cursor drag manipulation of external bomb handles; dynamic rotational transformation updating gravity vectors on the reactive atom.
+      </p>
     </section>
 
-    <!-- Context & Bottleneck -->
     <section class="space-y-4">
-      <h2 class="text-xl font-bold text-white">The Bottleneck</h2>
+      <h2 class="text-xl font-bold text-white">Engineering the Dynamic Entity Pipeline</h2>
       <p class="text-slate-300 leading-relaxed">
-        The operations team was manually downloading unformatted CSV extracts comprising thousands of aging records. Staff spent between 3 to 5 hours each reconciliation cycle manually applying VLOOKUP formulas, creating pivot tables, and copy-pasting customer figures into notification drafts.
+        Serving as the <strong>Physics Champion</strong> on the project, the primary challenge was delivering responsive collision dynamics while avoiding rigid, hardcoded scripts for level hazards. Rather than programming bespoke handling loops for each mechanic, an extensible entity-interaction pipeline was engineered directly into the core engine[cite: 36].
       </p>
-      <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/50 text-sm text-red-200">
-        <strong>Primary Risk:</strong> Manual formula modifications frequently introduced row-offset errors, leading to misstated customer balances during audits.
-      </div>
-    </section>
 
-    <!-- Technical Architecture / How It Works -->
-    <section class="space-y-4">
-      <h2 class="text-xl font-bold text-white">Engineering the Solution</h2>
-      <p class="text-slate-300 leading-relaxed">
-        Rather than relying on volatile spreadsheet formulas, the core processing engine was shifted into a cloud-native TypeScript Office Script:
-      </p>
-      
-      <div class="grid grid-cols-1 gap-4 text-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
         <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <h3 class="font-semibold text-cyan-300 mb-1">1. In-Memory Array Batching</h3>
-          <p class="text-slate-400">Avoided cell-by-cell DOM writes. The entire data range is pulled into memory as a 2D array, processed using hash maps to group accounts by client ID, and written back in a single batch call.</p>
+          <h3 class="font-semibold text-amber-300 mb-1">Custom Kinematics & Collision</h3>
+          <p class="text-slate-400">AABB checks, sweep tests, and circle-to-segment collision resolution routines calculated in C++ to preserve player momentum and produce tactile game feel[cite: 36, 37].</p>
         </div>
-
         <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <h3 class="font-semibold text-cyan-300 mb-1">2. Dynamic HTML Email Generation</h3>
-          <p class="text-slate-400">Querying specific site IDs cross-references an internal master roster to generate pre-styled HTML table summaries ready for outbound dispatch.</p>
+          <h3 class="font-semibold text-amber-300 mb-1">Modular Interaction Architecture</h3>
+          <p class="text-slate-400">Polymorphic trigger volumes and component-based response hooks allowed designers to deploy diverse hazards without re-engineering base physics loops.</p>
         </div>
       </div>
     </section>
 
-    <!-- Second Visual / Code Highlight (Optional) -->
-    <section class="space-y-3">
-      <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Email Dispatch Interface</h2>
-      <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
-        <img src="../assets/reconciliation/email-preview.png" alt="Email Preview" class="w-full rounded-lg border border-slate-800" onerror="this.src='https://placehold.co/800x350/0f172a/94a3b8?text=Add+Screenshot+of+Generated+Dispatch+Table';" />
+    <section class="space-y-8">
+      <h2 class="text-xl font-bold text-white border-b border-slate-800 pb-3">Level Mechanics & Hazards</h2>
+
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-slate-200">Impulse Springs & Kinematic Deflection</h3>
+          <span class="text-xs font-mono text-amber-400">Placeholder 02</span>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+          <img src="../assets/tilt-tilt-boom/02-springs.gif" alt="Spring Mechanic GIF" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/f59e0b?text=02.+Spring+Impulse+%26+Deflection+GIF';" />
+        </div>
+        <p class="text-xs text-slate-400">
+          Translates normal collision impact into an immediate linear impulse along the spring's orientation normal, unlocking non-linear vertical traversal through circular chambers.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-slate-200">Timed Hazard: "Bomb in a Bomb" Booby Trap</h3>
+          <span class="text-xs font-mono text-amber-400">Placeholder 03</span>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+          <img src="../assets/tilt-tilt-boom/03-bomb-in-bomb.gif" alt="Bomb in Bomb Mechanic GIF" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/f59e0b?text=03.+Bomb+in+a+Bomb+(5s+Dual-Button+Pressure+Challenge)+GIF';" />
+        </div>
+        <p class="text-xs text-slate-400">
+          A sub-chamber puzzle requiring players to trigger two distinct pressure nodes within 5 seconds. Failing this sequence prompts instant core meltdown, forcing rapid, calculated tilt adjustments.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-slate-200">Momentum-Preserving Teleporters</h3>
+          <span class="text-xs font-mono text-amber-400">Placeholder 04</span>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+          <img src="../assets/tilt-tilt-boom/04-teleporters.gif" alt="Teleporter Mechanic GIF" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/f59e0b?text=04.+Momentum-Preserving+Teleportation+GIF';" />
+        </div>
+        <p class="text-xs text-slate-400">
+          Seamlessly transforms the atom's spatial coordinates across disconnected portal zones while retaining instantaneous linear velocity and rotational force vectors.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-slate-200">Logic Triggers & Barrier Gates</h3>
+          <span class="text-xs font-mono text-amber-400">Placeholder 05</span>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+          <img src="../assets/tilt-tilt-boom/05-button-doors.gif" alt="Button Doors Mechanic GIF" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/f59e0b?text=05.+Red+Button+Actuation+%26+Gate+Unlocking+GIF';" />
+        </div>
+        <p class="text-xs text-slate-400">
+          Discrete actuator nodes wired to dynamic collision barriers. Forces routing detours and multi-tier puzzles, moving gameplay away from simple linear fall lines toward structured level exploration.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-slate-200">Buoyancy & Inverted Gravity Bubbles</h3>
+          <span class="text-xs font-mono text-amber-400">Placeholder 06</span>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+          <img src="../assets/tilt-tilt-boom/06-bubbles.gif" alt="Bubbles Mechanic GIF" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/f59e0b?text=06.+Reverse-Gravity+Bubble+Encapsulation+%26+Pop+GIF';" />
+        </div>
+        <p class="text-xs text-slate-400">
+          On contact, the atom is encapsulated in a buoyant bubble matrix, inverting gravity and dampening terminal velocity upwards for several seconds before popping and restoring default kinematic weight.
+        </p>
       </div>
     </section>
 
-    <!-- Quantitative Impact -->
     <section class="space-y-4 border-t border-slate-800 pt-8">
-      <h2 class="text-xl font-bold text-white">Business Impact</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">98%</div>
-          <div class="text-xs text-slate-400 mt-1">Turnaround Time Cut</div>
+      <h2 class="text-xl font-bold text-white">Project Team & Disciplines</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Product Manager</div>
+          <div class="font-medium text-slate-200 mt-0.5">Lu Yong Wei</div>
         </div>
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">0%</div>
-          <div class="text-xs text-slate-400 mt-1">Formula Offset Errors</div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Technical Lead</div>
+          <div class="font-medium text-slate-200 mt-0.5">Harine Sumen</div>
         </div>
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-2xl font-black text-cyan-400">&lt; 3s</div>
-          <div class="text-xs text-slate-400 mt-1">Batch Script Execution</div>
+        <div class="p-3 rounded-lg bg-amber-950/40 border border-amber-800/60">
+          <div class="text-amber-400 font-semibold">Physics Champion</div>
+          <div class="font-medium text-white mt-0.5">Gabriel Low</div>
+        </div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Programmer</div>
+          <div class="font-medium text-slate-200 mt-0.5">Jingwen Liu</div>
+        </div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Programmer</div>
+          <div class="font-medium text-slate-200 mt-0.5">Lucas Ling</div>
+        </div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Design Lead</div>
+          <div class="font-medium text-slate-200 mt-0.5">William Soe</div>
+        </div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Audio Lead</div>
+          <div class="font-medium text-slate-200 mt-0.5">Javier Low</div>
+        </div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-slate-400">Art Lead</div>
+          <div class="font-medium text-slate-200 mt-0.5">Lourdes Poh</div>
         </div>
       </div>
     </section>
 
-    <!-- Footer Nav -->
     <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-slate-400">
       <a href="../index.html" class="hover:text-white">&larr; Back to Overview</a>
-      <a href="power-automate.html" class="text-cyan-400 hover:underline">Next: Power Automate Optimization &rarr;</a>
+      <a href="https://games.digipen.edu/games/tilt-tilt-boom" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">View on DigiPen Gallery &rarr;</a>
     </footer>
 
   </article>
