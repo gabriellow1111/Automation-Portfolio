@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Reconciliation & Dispatch Tool | Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 sm:px-8 font-sans antialiased">
+  <article class="max-w-3xl mx-auto space-y-12">
+
+    <!-- Navigation Back -->
+    <nav>
+      <a href="../index.html" class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors">&larr; Back to all projects</a>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="space-y-4 border-b border-slate-800 pb-8">
+      <div class="flex flex-wrap gap-2">
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">Office Scripts</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">TypeScript</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Excel on the Web</span>
+        <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Process Automation</span>
+      </div>
+      
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">High-Volume Account Reconciliation & Dispatch Tool</h1>
+      <p class="text-slate-400 text-base leading-relaxed">
+        A custom TypeScript Office Script engineering pipeline designed to ingest unformatted aging reports, group and calculate multi-tier balances across thousands of accounts in-memory, and dynamically generate customer notification dispatch tables.
+      </p>
+    </header>
+
+    <!-- Hero Showcase: The Execution Loop -->
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Core Execution & Aggregation</h2>
+        <span class="text-xs font-mono text-cyan-400">Placeholder 01</span>
+      </div>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-2xl overflow-hidden">
+        <!-- 1) One-Click Execution & Instant Grouped Subtotals GIF -->
+        <img src="../assets/reconciliation/01-reconciliation-run.gif" alt="Reconciliation Script Run GIF" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x450/0f172a/06b6d4?text=01.+One-Click+Office+Script+Execution+%26+Aging+Table+Subtotals+GIF';" />
+      </div>
+      <p class="text-xs text-slate-400 text-center italic">
+        Figure 1: Executing the Office Script on raw accounts aging export; aggregating and rendering categorized account breakdowns in under 3 seconds.
+      </p>
+    </section>
+
+    <!-- The Problem & Root Cause -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-white">The Operational Bottleneck</h2>
+      <p class="text-slate-300 leading-relaxed">
+        Reconciliation cycles previously required manual manipulation of static CSV dumps containing thousands of rows. Finance operators spent 3 to 4 hours per cycle building multi-level pivot tables, recalculating rolling 30/60/90+ day balances, and cross-referencing master account rosters manually.
+      </p>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/50 text-red-200">
+          <h3 class="font-semibold text-red-300 mb-1">Volatile Formula Offsets</h3>
+          <p class="text-slate-400 text-xs">Dynamic account additions frequently led to mismatched ranges, broken VLOOKUP dependencies, and corrupted audit logs.</p>
+        </div>
+        <div class="p-4 rounded-lg bg-red-950/20 border border-red-900/50 text-red-200">
+          <h3 class="font-semibold text-red-300 mb-1">Manual Dispatch Drafting</h3>
+          <p class="text-slate-400 text-xs">Operators had to manually inspect balances and compose individual notification emails for delinquent or anomalous site accounts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-white">Architectural Solution</h2>
+      <p class="text-slate-300 leading-relaxed">
+        Rather than relying on formula chaining or slow iterative spreadsheet API calls, the tool executes clean, in-memory aggregation via Office Scripts:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">In-Memory Hash Map Grouping</h3>
+          <p class="text-slate-400">
+            Pulls data via a single <code class="text-xs bg-slate-800 px-1 py-0.5 rounded text-cyan-300">getValues()</code> call. Rows are mapped into TypeScript dictionary structures by Account and Site ID, eliminating repeated sheet DOM lookups.
+          </p>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">Single Batch Writeback</h3>
+          <p class="text-slate-400">
+            Formatted summary structures, calculated subtotals, and status flags are committed in one transactional write operation, minimizing network overhead and API latency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase 2: Automated Dispatch Sheet -->
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Automated Dispatch Sheet & Email Generator</h2>
+        <span class="text-xs font-mono text-cyan-400">Placeholder 02</span>
+      </div>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 overflow-hidden shadow-lg">
+        <!-- 2) Dispatch Sheet & Customized Email Body Generation GIF -->
+        <img src="../assets/reconciliation/02-dispatch-automation.gif" alt="Automated Dispatch Sheet Demo" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/06b6d4?text=02.+Site+ID+Lookup+%26+Automated+Email+Body+Generator+GIF';" />
+      </div>
+      <p class="text-xs text-slate-400 text-center italic">
+        Figure 2: Site ID query interface dynamically pulling recipient metadata and auto-populating structured email notification bodies.
+      </p>
+    </section>
+
+    <!-- Code Highlight / Logic Walkthrough -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-white">Code Implementation Snippet</h2>
+      <div class="rounded-xl border border-slate-800 bg-slate-900/80 p-4 font-mono text-xs overflow-x-auto text-slate-300">
+        <pre><code class="language-typescript"><span class="text-slate-500">// TypeScript snippet: Batch memory ingestion & grouping</span>
+<span class="text-purple-400">function</span> <span class="text-blue-400">main</span>(workbook: ExcelScript.Workbook) {
+  <span class="text-purple-400">const</span> sheet = workbook.getActiveWorksheet();
+  <span class="text-purple-400">const</span> dataRange = sheet.getUsedRange();
+  <span class="text-purple-400">const</span> rawData: (string | number)[][] = dataRange.getValues();
+
+  <span class="text-slate-500">// In-memory accumulator preventing repeated cell evaluations</span>
+  <span class="text-purple-400">const</span> accountSummary = <span class="text-purple-400">new</span> Map&lt;<span class="text-yellow-400">string</span>, { aging30: <span class="text-yellow-400">number</span>, aging60: <span class="text-yellow-400">number</span>, total: <span class="text-yellow-400">number</span> }&gt;();
+
+  <span class="text-purple-400">for</span> (<span class="text-purple-400">let</span> i = 1; i &lt; rawData.length; i++) {
+    <span class="text-purple-400">const</span> [accountId, siteId, balance, agingDays] = rawData[i];
+    <span class="text-slate-500">// Grouping & balance calculation logic...</span>
+  }
+
+  <span class="text-slate-500">// Single-pass batch render back to output sheet</span>
+  outputRange.setValues(formattedResults);
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Measurable Impact -->
+    <section class="space-y-4 border-t border-slate-800 pt-8">
+      <h2 class="text-xl font-bold text-white">System Impact</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">3 hrs &rarr; 3s</div>
+          <div class="text-xs text-slate-400 mt-1">Reconciliation Run Time</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">0%</div>
+          <div class="text-xs text-slate-400 mt-1">Formula Offset Errors</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">100%</div>
+          <div class="text-xs text-slate-400 mt-1">Email Formatting Consistency</div>
+        </div>
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-2xl font-black text-cyan-400">Batch</div>
+          <div class="text-xs text-slate-400 mt-1">Transactional Writeback</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Nav -->
+    <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-slate-400">
+      <a href="../index.html" class="hover:text-white">&larr; Back to Overview</a>
+      <a href="power-automate.html" class="text-cyan-400 hover:underline">Next: Power Automate Optimization &rarr;</a>
+    </footer>
+
+  </article>
+</body>
+</html>
