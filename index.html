@@ -8,15 +8,15 @@
   <!-- Standard Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen py-12 px-4 sm:px-8 font-sans">
-  <main class="max-w-4xl mx-auto space-y-12">
+<body class="bg-slate-950 text-slate-100 min-h-screen py-12 px-4 sm:px-8 font-sans antialiased">
+  <main class="max-w-5xl mx-auto space-y-12">
     <!-- Header -->
     <header class="border-b border-slate-800 pb-6">
-      <h1 class="text-3xl font-bold text-white">Gabriel Low</h1>
+      <h1 class="text-3xl font-bold text-white tracking-tight">Gabriel Low</h1>
       <p class="text-slate-400 mt-1">Computer Science & Business Automation | Singapore</p>
       <div class="mt-4 flex gap-4 text-sm text-cyan-400">
         <a href="https://linkedin.com/in/lowgabriel" target="_blank" class="hover:underline">LinkedIn</a>
-        <a href="https://github.com/yourusername" target="_blank" class="hover:underline">GitHub</a>
+        <a href="https://github.com/gabriellow1111" target="_blank" class="hover:underline">GitHub</a>
       </div>
     </header>
 
@@ -26,53 +26,107 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         <!-- Card 1: AR Aging & Dispatch Tool -->
-        <a href="projects/ar-aging-dispatch.html" class="group block p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1">
-          <div class="flex gap-2 mb-3">
-            <span class="px-2 py-0.5 text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800 rounded">Office Scripts</span>
-            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">TypeScript</span>
+        <a href="projects/ar-aging-dispatch.html" class="group flex flex-col justify-between p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1 shadow-lg">
+          <div>
+            <!-- Card Thumbnail -->
+            <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
+              <img src="assets/ar-aging-preview.png" alt="AR Aging & Customer Dispatch Tool Preview" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x340/0f172a/06b6d4?text=AR+Aging+Tool+Preview';" />
+            </div>
+            
+            <div class="flex gap-2 mb-3">
+              <span class="px-2 py-0.5 text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800 rounded">Office Scripts</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">TypeScript</span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
+              Automated AR Aging & Customer Dispatch Tool
+            </h3>
+            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+              A script that pulls thousands of messy records from a raw Excel export, filters out the clutter, and groups balances by customer site so the team can prep and send email statements in seconds instead of hours.
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
-            Automated AR Aging & Customer Dispatch Pipeline
-          </h3>
-          <p class="text-slate-400 text-sm mt-2">
-            In-memory ledger extraction, transaction filtering, and staged subtotal tables built to power dynamic customer statement dispatches.
-          </p>
-          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-4 group-hover:translate-x-1 transition-transform">
+
+          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-5 group-hover:translate-x-1 transition-transform">
             See how it works &rarr;
           </span>
         </a>
 
-        <!-- Card 2 -->
-        <a href="projects/power-automate.html" class="group block p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1">
-          <div class="flex gap-2 mb-3">
-            <span class="px-2 py-0.5 text-xs font-mono bg-blue-950 text-blue-300 border border-blue-800 rounded">Power Automate</span>
-            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">M365</span>
+        <!-- Card 2: Enterprise Notifications Workflow -->
+        <a href="projects/enterprise-notifications-workflow.html" class="group flex flex-col justify-between p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1 shadow-lg">
+          <div>
+            <!-- Card Thumbnail -->
+            <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
+              <img src="assets/power-automate-preview.png" alt="Power Automate Workflow Preview" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x340/0f172a/3b82f6?text=Power+Automate+Flow+Preview';" />
+            </div>
+
+            <div class="flex gap-2 mb-3">
+              <span class="px-2 py-0.5 text-xs font-mono bg-blue-950 text-blue-300 border border-blue-800 rounded">Power Automate</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">M365</span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
+              Enterprise Notification Workflow Optimization
+            </h3>
+            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+              Refactored a sluggish Power Automate flow that was timing out on class schedules by getting rid of slow row-by-row loops and adding multi-trainer CC routing.
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Enterprise Notification Optimization</h3>
-          <p class="text-slate-400 text-sm mt-2">Refactored slow batch operations with filter arrays and parallel routing, cutting run execution to near-instant dispatch.</p>
-          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-4 group-hover:translate-x-1 transition-transform">View project breakdown &rarr;</span>
+
+          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-5 group-hover:translate-x-1 transition-transform">
+            See how it works &rarr;
+          </span>
         </a>
 
-        <!-- Card 3 -->
-        <a href="projects/real-estate.html" class="group block p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1">
-          <div class="flex gap-2 mb-3">
-            <span class="px-2 py-0.5 text-xs font-mono bg-emerald-950 text-emerald-300 border border-emerald-800 rounded">Google Sheets</span>
-            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Financial Modeling</span>
+        <!-- Card 3: Real Estate Forecasting Model -->
+        <a href="projects/real-estate-forecasting.html" class="group flex flex-col justify-between p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1 shadow-lg">
+          <div>
+            <!-- Card Thumbnail -->
+            <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
+              <img src="assets/real-estate-preview.png" alt="Real Estate Forecasting Model Preview" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x340/0f172a/10b981?text=Real+Estate+Model+Preview';" />
+            </div>
+
+            <div class="flex gap-2 mb-3">
+              <span class="px-2 py-0.5 text-xs font-mono bg-emerald-950 text-emerald-300 border border-emerald-800 rounded">Google Sheets</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Financial Modeling</span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
+              Real Estate Cash-Flow & ROE% Model
+            </h3>
+            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+              An interactive Google Sheet that factors in mortgage amortization, maintenance, vacancy rates, and exit taxes to show investors their true cash flow and annualized ROE% in real time.
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Cash-Flow Forecasting Model</h3>
-          <p class="text-slate-400 text-sm mt-2">Dynamic investment dashboard calculating debt service, exit taxes, and live annualized ROE%.</p>
-          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-4 group-hover:translate-x-1 transition-transform">View project breakdown &rarr;</span>
+
+          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-5 group-hover:translate-x-1 transition-transform">
+            See how it works &rarr;
+          </span>
         </a>
 
-        <!-- Card 4 -->
-        <a href="projects/tilt-tilt-boom.html" class="group block p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1">
-          <div class="flex gap-2 mb-3">
-            <span class="px-2 py-0.5 text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800 rounded">C++</span>
-            <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Custom Engine</span>
+        <!-- Card 4: Tilt Tilt Boom -->
+        <a href="projects/tilt-tilt-boom.html" class="group flex flex-col justify-between p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1 shadow-lg">
+          <div>
+            <!-- Card Thumbnail -->
+            <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
+              <img src="assets/tilt-tilt-boom-preview.png" alt="Tilt Tilt Boom Game Engine Preview" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/600x340/0f172a/f59e0b?text=Tilt+Tilt+Boom+Game+Preview';" />
+            </div>
+
+            <div class="flex gap-2 mb-3">
+              <span class="px-2 py-0.5 text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800 rounded">C++</span>
+              <span class="px-2 py-0.5 text-xs font-mono bg-slate-800 text-slate-300 rounded">Custom Engine</span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
+              Tilt Tilt Boom — Custom 2D Physics Game
+            </h3>
+            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+              A 2D puzzle game where players click and tilt a bomb to guide an unstable atom to the exit. Built the custom C++ physics engine, collision detection, and modular level objects like springs, teleporters, and reverse-gravity bubbles.
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Tilt Tilt Boom Engine</h3>
-          <p class="text-slate-400 text-sm mt-2">2D physics simulation, kinematic body resolution, and AABB collision detection built from scratch in C++.</p>
-          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-4 group-hover:translate-x-1 transition-transform">View project breakdown &rarr;</span>
+
+          <span class="inline-flex items-center text-xs font-semibold text-cyan-400 mt-5 group-hover:translate-x-1 transition-transform">
+            See how it works &rarr;
+          </span>
         </a>
 
       </div>
