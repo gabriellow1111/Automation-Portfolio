@@ -3,169 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AR Aging & Customer Dispatch Tool | Case Study</title>
+  <title>AR Aging & Customer Dispatch Tool</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen py-12 px-4 sm:px-8 font-sans antialiased">
-  <article class="max-w-3xl mx-auto space-y-14">
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 sm:px-8 font-sans antialiased">
+  <article class="max-w-3xl mx-auto space-y-10">
 
     <nav>
-      <a href="../index.html" class="text-base font-medium text-slate-400 hover:text-cyan-400 transition-colors">&larr; Back to all projects</a>
+      <a href="../index.html" class="text-sm font-medium text-slate-400 hover:text-cyan-400 transition-colors">&larr; Back to all projects</a>
     </nav>
 
-    <header class="space-y-5 border-b border-slate-800 pb-10">
+    <header class="space-y-3 border-b border-slate-800 pb-6">
       <div class="flex flex-wrap gap-2">
-        <span class="px-3 py-1 rounded text-sm font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">Office Scripts</span>
-        <span class="px-3 py-1 rounded text-sm font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">TypeScript</span>
-        <span class="px-3 py-1 rounded text-sm font-mono bg-slate-800 text-slate-300">Excel Online</span>
+        <span class="px-2 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">Office Scripts</span>
+        <span class="px-2 py-0.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">TypeScript</span>
+        <span class="px-2 py-0.5 rounded text-xs font-mono bg-slate-800 text-slate-300">Excel Online</span>
       </div>
       
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+      <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
         Automated AR Aging & Customer Dispatch Tool
       </h1>
-      <p class="text-slate-300 text-lg sm:text-xl leading-relaxed">
+      <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
         A TypeScript script I wrote to clean up a huge, messy aging report from Excel. It extracts the columns we actually care about, sorts the rows by due date, and builds clean tables for each customer so the team can prep statement emails right away.
       </p>
     </header>
 
     <section class="space-y-4">
-      <h2 class="text-2xl sm:text-3xl font-bold text-white">The Impact</h2>
+      <h2 class="text-xl font-semibold text-slate-200">The Impact</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800">
-          <div class="text-4xl font-black text-cyan-400">Hours &rarr; 15s</div>
-          <div class="text-base text-slate-300 font-medium mt-2">Total Processing Time</div>
-          <p class="text-sm text-slate-400 mt-1">What used to take an entire afternoon of manual formatting runs in seconds.</p>
+        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+          <div class="text-2xl sm:text-3xl font-black text-cyan-400">Hours &rarr; 15s</div>
+          <div class="text-sm text-slate-200 font-medium mt-1">Total Processing Time</div>
+          <p class="text-xs text-slate-400 mt-1">What used to take an entire afternoon of manual formatting runs in seconds.</p>
         </div>
-        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800">
-          <div class="text-4xl font-black text-cyan-400">1 Click</div>
-          <div class="text-base text-slate-300 font-medium mt-2">Zero Copy-Pasting</div>
-          <p class="text-sm text-slate-400 mt-1">Eliminates row-offset mistakes and broken formulas from manual spreadsheet edits.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="space-y-5">
-      <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">How the Flow Works</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
-          <div>
-            <span class="text-slate-500 font-mono text-sm">STEP 01</span>
-            <h3 class="font-bold text-white text-lg mt-1">Raw Aging Dump</h3>
-            <p class="text-slate-300 text-sm mt-2">Over 70 columns wide with hidden rows and raw data that is hard to read.</p>
-          </div>
-          <div class="text-cyan-400 mt-4 font-mono text-xs">&rarr; Read Cols 65–73</div>
-        </div>
-
-        <div class="p-5 rounded-xl bg-cyan-950/30 border border-cyan-800/60 flex flex-col justify-between">
-          <div>
-            <span class="text-cyan-400 font-mono text-sm">STEP 02</span>
-            <h3 class="font-bold text-white text-lg mt-1">Run the Script</h3>
-            <p class="text-slate-300 text-sm mt-2">Filters the noise in memory, sorts by due date, and groups accounts by site.</p>
-          </div>
-          <div class="text-cyan-400 mt-4 font-mono text-xs">&rarr; Output to Working Tab</div>
-        </div>
-
-        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
-          <div>
-            <span class="text-slate-500 font-mono text-sm">STEP 03</span>
-            <h3 class="font-bold text-white text-lg mt-1">Email Prep Tab</h3>
-            <p class="text-slate-300 text-sm mt-2">Select any site ID to instantly pull formatted tables into email drafts.</p>
-          </div>
-          <div class="text-cyan-400 mt-4 font-mono text-xs">&rarr; Ready to Send</div>
+        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+          <div class="text-2xl sm:text-3xl font-black text-cyan-400">1 Click</div>
+          <div class="text-sm text-slate-200 font-medium mt-1">Zero Copy-Pasting</div>
+          <p class="text-xs text-slate-400 mt-1">Eliminates row-offset mistakes and broken formulas from manual spreadsheet edits.</p>
         </div>
       </div>
     </section>
 
     <section class="space-y-4">
-      <div>
-        <h2 class="text-2xl font-bold text-white">1. The Raw "Aging" Sheet</h2>
-        <p class="text-base text-slate-300 mt-1">This is what the client started with—a massive sheet with dozens of irrelevant columns.</p>
+      <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">How the Flow Works</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="text-slate-500 font-mono">STEP 01</span>
+            <h3 class="font-bold text-white text-sm mt-1">Raw Aging Dump</h3>
+            <p class="text-slate-400 mt-1">Over 70 columns wide with hidden rows and raw data that is hard to read.</p>
+          </div>
+          <div class="text-cyan-400 mt-3 font-mono text-[11px]">&rarr; Read Cols 65–73</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-cyan-950/30 border border-cyan-800/60 flex flex-col justify-between">
+          <div>
+            <span class="text-cyan-400 font-mono">STEP 02</span>
+            <h3 class="font-bold text-white text-sm mt-1">Run the Script</h3>
+            <p class="text-slate-300 mt-1">Filters the noise in memory, sorts by due date, and groups accounts by site.</p>
+          </div>
+          <div class="text-cyan-400 mt-3 font-mono text-[11px]">&rarr; Output to Working Tab</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="text-slate-500 font-mono">STEP 03</span>
+            <h3 class="font-bold text-white text-sm mt-1">Email Prep Tab</h3>
+            <p class="text-slate-400 mt-1">Select any site ID to instantly pull formatted tables into email drafts.</p>
+          </div>
+          <div class="text-cyan-400 mt-3 font-mono text-[11px]">&rarr; Ready to Send</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">1. The Raw "Aging" Sheet</h2>
+          <p class="text-xs text-slate-400">This is what the client started with—a massive sheet with dozens of irrelevant columns.</p>
+        </div>
+        <span class="text-xs font-mono text-cyan-400">Input Data</span>
       </div>
       <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-xl overflow-hidden">
         <img src="../assets/01-aging-sheet.png" alt="Raw Aging Sheet" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/06b6d4?text=01.+Raw+Aging+Sheet+Screenshot';" />
       </div>
-      <p class="text-sm text-slate-400 italic">
+      <p class="text-xs text-slate-400 italic">
         The actual data the team needed (Site Description, Due Date, Transaction Type, and Amount) was buried all the way out in columns 65 to 73.
       </p>
     </section>
 
-    <section class="space-y-4">
-      <div>
-        <h2 class="text-2xl font-bold text-white">2. One-Click Execution</h2>
-        <p class="text-base text-slate-300 mt-1">Clicking "Run" executes the TypeScript logic directly in Excel on the Web.</p>
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">2. One-Click Execution</h2>
+          <p class="text-xs text-slate-400">Clicking "Run" executes the TypeScript logic directly in Excel on the Web.</p>
+        </div>
+        <span class="text-xs font-mono text-cyan-400">Action GIF</span>
       </div>
       <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-xl overflow-hidden">
         <img src="../assets/02-script-running.gif" alt="Execution GIF of Office Script" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x450/0f172a/06b6d4?text=02.+Script+Running+GIF';" />
       </div>
-      <p class="text-sm text-slate-400 italic">
+      <p class="text-xs text-slate-400 italic">
         The script clears out previous runs, skips hidden columns, filters 16 allowed invoice and credit types, adds sum formulas, and sets up formatting in roughly 15 seconds.
       </p>
     </section>
 
-    <section class="space-y-4">
-      <div>
-        <h2 class="text-2xl font-bold text-white">3. Output: The Clean "Working" Tab</h2>
-        <p class="text-base text-slate-300 mt-1">What the data looks like after the script finishes reorganizing it.</p>
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">3. Output: The Clean "Working" Tab</h2>
+          <p class="text-xs text-slate-400">What the data looks like after the script finishes reorganizing it.</p>
+        </div>
+        <span class="text-xs font-mono text-cyan-400">Staged Output</span>
       </div>
       <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-xl overflow-hidden">
         <img src="../assets/03-working-sheet.png" alt="Working Sheet Output" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/06b6d4?text=03.+Working+Sheet+Screenshot';" />
       </div>
-      <p class="text-sm text-slate-400 italic">
-        Each customer site gets its own clean table with light blue headers, dates sorted chronologically, formatted dollar values, and dynamic <code class="text-cyan-300 font-mono text-xs">=SUM()</code> rows at the bottom.
+      <p class="text-xs text-slate-400 italic">
+        Each customer site gets its own clean table with light blue headers, dates sorted chronologically, formatted dollar values, and dynamic <code class="text-cyan-300 font-mono text-[11px]">=SUM()</code> rows at the bottom.
       </p>
     </section>
 
-    <section class="space-y-4">
-      <div>
-        <h2 class="text-2xl font-bold text-white">4. Downstream: The "Email Prep" Tab</h2>
-        <p class="text-base text-slate-300 mt-1">Where the team actually creates and sends client notifications.</p>
+    <section class="space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">4. Downstream: The "Email Prep" Tab</h2>
+          <p class="text-xs text-slate-400">Where the team actually creates and sends client notifications.</p>
+        </div>
+        <span class="text-xs font-mono text-cyan-400">Dispatch Layer</span>
       </div>
       <div class="rounded-xl border border-slate-800 bg-slate-900 p-2 shadow-xl overflow-hidden">
         <img src="../assets/04-email-prep-sheet.png" alt="Email Prep Sheet View" class="w-full rounded-lg border border-slate-800 object-cover" onerror="this.src='https://placehold.co/800x400/0f172a/06b6d4?text=04.+Email+Prep+Sheet+Screenshot';" />
       </div>
-      <p class="text-sm text-slate-400 italic">
+      <p class="text-xs text-slate-400 italic">
         Because the "Working" tab is cleanly structured, the Email Prep sheet simply references the site ID to pull in that customer's exact statement table—no manual copy-pasting required.
       </p>
     </section>
 
-    <section class="space-y-5 border-t border-slate-800 pt-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-white">How It Works Under the Hood</h2>
+    <section class="space-y-4 border-t border-slate-800 pt-8">
+      <h2 class="text-xl font-semibold text-slate-200">How It Works Under the Hood</h2>
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base">
-        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="font-semibold text-cyan-300 text-lg mb-1">Ignoring Hidden Columns</h3>
-          <p class="text-slate-300 text-sm leading-relaxed">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">Ignoring Hidden Columns</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
             The script only targets columns 65 through 73, checking if a column is collapsed so it doesn't accidentally pull in hidden metadata that breaks the layout.
           </p>
         </div>
 
-        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="font-semibold text-cyan-300 text-lg mb-1">Filtering Transaction Types</h3>
-          <p class="text-slate-300 text-sm leading-relaxed">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">Filtering Transaction Types</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
             There are lots of internal notes and noise in the raw file. The code checks each row against a list of 16 valid transaction types (like Lease Invoices, Credit Memos, and GIRO payments).
           </p>
         </div>
 
-        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="font-semibold text-cyan-300 text-lg mb-1">Sorting & Injected Sums</h3>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            It sorts rows chronologically by Due Date, then writes an active <code class="text-cyan-300 font-mono text-xs">=SUM()</code> formula matching the exact row count for each customer site.
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">Sorting & Injected Sums</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            It sorts rows chronologically by Due Date, then writes an active <code class="text-cyan-300 font-mono text-[11px]">=SUM()</code> formula matching the exact row count for each customer site.
           </p>
         </div>
 
-        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="font-semibold text-cyan-300 text-lg mb-1">Fast In-Memory Processing</h3>
-          <p class="text-slate-300 text-sm leading-relaxed">
+        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+          <h3 class="font-semibold text-cyan-300 mb-1">Fast In-Memory Processing</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
             Instead of writing to Excel cell by cell (which freezes the browser), all filtering and math happen in memory first, then write to the sheet in a single batch.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="space-y-4">
+    <section class="space-y-3">
       <h2 class="text-xs uppercase tracking-wider font-semibold text-slate-400">Core TypeScript Logic</h2>
-      <div class="rounded-xl border border-slate-800 bg-slate-900/90 p-5 font-mono text-sm overflow-x-auto text-slate-300 max-h-96">
+      <div class="rounded-xl border border-slate-800 bg-slate-900/80 p-4 font-mono text-xs overflow-x-auto text-slate-300 max-h-96">
         <pre><code class="language-typescript">// Group rows by customer site and write dynamic SUM formulas
 for (let site of uniqueSites) {
   let siteRows = data.filter(r => {
@@ -198,7 +210,7 @@ for (let site of uniqueSites) {
       </div>
     </section>
 
-    <footer class="border-t border-slate-800 pt-8 flex justify-between text-base text-slate-400">
+    <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-slate-400">
       <a href="../index.html" class="hover:text-white">&larr; Back to Overview</a>
       <a href="power-automate.html" class="text-cyan-400 hover:underline">Next: Power Automate Optimization &rarr;</a>
     </footer>
